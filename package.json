@@ -1,0 +1,38 @@
+{
+  "name": "frontend-template",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "author": "himself65 <himself65@outlook.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js src",
+    "lint:fix": "eslint --fix --ext .js src",
+    "watch": "parcel watch ./public/index.html",
+    "build": "parcel ./public/index.html",
+    "dev": "concurrently \" cross-env DEV_TARGET=mock yarn watch \" \"nodemon mock/index.js \" "
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.6.8",
+    "@vue/component-compiler-utils": "^3.0.0",
+    "autoprefixer": "^9.6.1",
+    "concurrently": "^4.1.1",
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "express": "^4.17.1",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.3",
+    "vue": "^2.6.10",
+    "vue-hot-reload-api": "^2.3.3"
+  }
+}
